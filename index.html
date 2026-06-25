@@ -63,6 +63,11 @@
             width: 100%;
             box-sizing: border-box;
         }
+
+        .main-content {
+            align-self: center;
+            width: min(calc(100vw - 40px), 1440px);
+        }
         
         /* 调整编辑区和预览区的布局 */
         .editor-preview-container {
@@ -74,7 +79,8 @@
         
         .editor-panel {
             flex: 1;
-            max-width: 500px; /* STEAM论坛评论区宽度 */
+            flex-basis: 0;
+            max-width: 680px; /* STEAM论坛评论区宽度 */
             background-color: #2a3f5a;
             border-radius: 4px;
             padding: 16px;
@@ -82,7 +88,8 @@
         }
         .preview-panel  {
             flex: 1;
-            max-width: 580px; /* STEAM论坛评论区宽度 */
+            flex-basis: 0;
+            max-width: 680px; /* STEAM论坛评论区宽度 */
             background-color: #2a3f5a;
             border-radius: 4px;
             padding: 16px;
@@ -98,7 +105,7 @@
         }
         
         #editor {
-            width: calc(100% - 22px); /* 调整宽度以匹配背景 */
+            width: 100%; /* 调整宽度以匹配背景 */
             height: 500px;
             background-color: #16202d;
             color: #acb2b8;
@@ -120,7 +127,7 @@
             border-radius: 4px;
             overflow-wrap: break-word;
             overflow-y: auto;
-            width: 530px; 
+            width: 100%;
         }
         
         .toolbar {
@@ -382,7 +389,11 @@
         }
 
         /* 响应式设计 */
-        @media (max-width: 1200px) {
+        @media (max-width: 1240px) {
+            .main-content {
+                width: 100%;
+            }
+
             .editor-preview-container {
                 flex-direction: column;
                 align-items: center;
@@ -393,10 +404,6 @@
                 width: 100%;
             }
             
-            #preview {
-                width: calc(100% - 32px);
-            }
-
             .template-buttons {
                 flex-direction: row;
                 flex-wrap: wrap;
