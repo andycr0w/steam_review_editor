@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Steam 评论区文档编辑器</title>
+  <rect width="64" height="64" rx="14" fill="#1b2838"/>
+  <path d="M9 13h46v32H30l-10 8v-8H9V13Z" fill="#2a3f5a" stroke="#67c1f5" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m25 36 2-7 14-14 7 7-14 14-9 2Z" fill="#e5e5e5" stroke="#67c1f5" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m39 17 7 7" stroke="#1b2838" stroke-width="3"/>
+</svg>
